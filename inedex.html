@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 15px 20px;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            background: url('https://via.placeholder.com/1200x600') center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .buttons {
+            margin: 20px 0;
+        }
+
+        .buttons button {
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: transparent;
+            color: rgb(255, 255, 255);
+            border: 2px solid whitesmoke;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .center-text {
+            text-align: center;
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTpeVmhdcC7v7G1V6MGVOkXkG2AxtuWRMIRQ&s') center/cover;
+            color: rgb(255, 255, 255);
+            padding: 50px 20px;
+            position: relative;
+            /* Ensure stacking context for overlap */
+        }
+
+        .features {
+            display: flex;
+            /* Use flexbox for horizontal alignment */
+            justify-content: space-around;
+            /* Space out the cards evenly */
+            gap: 50px;
+            /* Add spacing between the cards */
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+            top: -80px;
+            height: 150px;
+            width: 1500px;
+            /* Move the cards up to overlap the background */
+            z-index: 1;
+            /* Ensure the cards appear above the background */
+        }
+
+        .feature-item {
+            background-color: #f4f4f4;
+            /* Light background for the cards */
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            /* Add a subtle shadow for a card effect */
+            width: 200px;
+            /* Set a fixed width for the cards */
+            text-align: center;
+        }
+
+        .content-section {
+            padding: 50px 20px;
+            text-align: center;
+            color: #f4f4f4;
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmb2dWkNWQ3eX5ZqJ3TbiKXifdXNb-8_kxGg&s') center/cover;
+        }
+
+        .core-values {
+            padding: 40px 20px;
+        }
+
+        .core-values ul {
+            display: grid;
+            /* Enable grid layout */
+            grid-template-columns: repeat(2, 1fr);
+            /* Create 2 equal-width columns */
+            gap: 20px;
+            /* Add spacing between grid items */
+            list-style: none;
+            /* Remove default bullet points */
+            padding: 0;
+        }
+
+        
+
+        .core-values h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .core-values p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">KBS</div>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="center-text">
+        <h2>Welcome to Our Charity</h2>
+        <p>We strive to make the world a better place by helping those in need.</p>
+        <div class="buttons">
+            <button>Donate Now</button>
+            <button>Join Us</button>
+        </div>
+    </div>
+
+    <section class="features">
+        <div class="feature-item">Healthy Food</div>
+        <div class="feature-item">Pure Water</div>
+        <div class="feature-item">Medical Facilities</div>
+    </section>
+
+    <div class="content-section">
+        <h2>What we are doing now</h2>
+        <p>We are committed to improving lives by providing basic needs and promoting sustainable solutions.</p>
+        <button>Read More</button>
+    </div>
+
+    <section class="core-values">
+        <ul>
+            <li>
+                <h3>Service beyond self</h3>
+                <p>Helping others without expectations.</p>
+            </li>
+            <li>
+                <h3>Sustainability</h3>
+                <p>Promoting eco-friendly solutions.</p>
+            </li>
+            <li>
+                <h3>Empowerment</h3>
+                <p>Enabling people to thrive.</p>
+            </li>
+            <li>
+                <h3>Integrity</h3>
+                <p>Acting with honesty and fairness.</p>
+            </li>
+            <li>
+                <h3>Accountability</h3>
+                <p>Taking responsibility for actions.</p>
+            </li>
+            <li>
+                <h3>Transparency</h3>
+                <p>Being open and clear always.</p>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Charity Organization. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
